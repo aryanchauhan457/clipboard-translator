@@ -178,7 +178,7 @@ class ClipboardReaderActivity : Activity() {
         val preview = if (hindi.length > 180) hindi.take(177) + "..." else hindi
         val notification = if (Build.VERSION.SDK_INT >= 26) {
             Notification.Builder(this, channelId)
-                .setSmallIcon(android.R.drawable.ic_menu_translate)
+                .setSmallIcon(android.R.drawable.ic_dialog_info)
                 .setContentTitle("English → Hindi")
                 .setContentText(preview)
                 .setStyle(Notification.BigTextStyle().bigText("EN: $english\n\nHI: $hindi"))
@@ -186,7 +186,7 @@ class ClipboardReaderActivity : Activity() {
                 .build()
         } else {
             Notification.Builder(this)
-                .setSmallIcon(android.R.drawable.ic_menu_translate)
+                .setSmallIcon(android.R.drawable.ic_dialog_info)
                 .setContentTitle("English → Hindi")
                 .setContentText(preview)
                 .setAutoCancel(true)
