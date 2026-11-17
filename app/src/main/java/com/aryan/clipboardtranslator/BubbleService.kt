@@ -42,7 +42,7 @@ class BubbleService : Service() {
             Notification.Builder(this, CHANNEL_ID)
                 .setContentTitle("Clipboard Translator is active")
                 .setContentText("Tap the floating हिन्दी button after copying text.")
-                .setSmallIcon(android.R.drawable.ic_menu_translate)
+                .setSmallIcon(android.R.drawable.ic_dialog_info)
                 .setContentIntent(openApp)
                 .setOngoing(true)
                 .build()
@@ -50,7 +50,7 @@ class BubbleService : Service() {
             Notification.Builder(this)
                 .setContentTitle("Clipboard Translator is active")
                 .setContentText("Floating translation button is ready.")
-                .setSmallIcon(android.R.drawable.ic_menu_translate)
+                .setSmallIcon(android.R.drawable.ic_dialog_info)
                 .setOngoing(true)
                 .build()
         }
