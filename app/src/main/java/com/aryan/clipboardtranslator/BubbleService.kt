@@ -134,9 +134,9 @@ class BubbleService : Service() {
                 }
                 MotionEvent.ACTION_UP -> {
                     if (!moved) {
-                        val intent = Intent(this, ClipboardReaderActivity::class.java)
-                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP)
-                        startActivity(intent)
+                        //val intent = Intent(this, ClipboardReaderActivity::class.java)
+                        //    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                        //startActivity(intent)
                     }
                     true
                 }
