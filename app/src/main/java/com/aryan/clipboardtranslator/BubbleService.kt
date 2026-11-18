@@ -57,7 +57,7 @@ class BubbleService : Service() {
         val notification = Notification.Builder(this, CHANNEL_ID)
             .setContentTitle("Clipboard Translator is active")
             .setContentText("Tap the floating हिन्दी button after copying text.")
-            .setSmallIcon(android.R.drawable.ic_menu_translate)
+            .setSmallIcon(android.R.drawable.ic_menu_info_details)
             .setContentIntent(openApp)
             .setOngoing(true)
             .build()
@@ -368,7 +368,7 @@ class BubbleService : Service() {
 
         val notification = Notification.Builder(this, channelId)
 
-            .setSmallIcon(android.R.drawable.ic_menu_translate)
+            .setSmallIcon(android.R.drawable.ic_menu_info_details)
 
             .setContentTitle("English → Hindi")
 
@@ -415,7 +415,7 @@ class BubbleService : Service() {
 
         val notification = Notification.Builder(this, channelId)
 
-            .setSmallIcon(android.R.drawable.ic_menu_translate)
+            .setSmallIcon(android.R.drawable.ic_menu_info_details)
 
             .setContentTitle(title)
 
